@@ -173,22 +173,57 @@ header {
   align-items: center;
   justify-content: space-between;
   padding: 20px 15px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  opacity: 50%;
+  background-color: rgba(166, 189, 223, 0.4);
+  filter: drop-shadow(5px 5px 15px);
+  z-index: 1;
+  backdrop-filter: blur(5px);
+}
+header .word-logo {
+  display: flex;
+  justify-content: space-between;
+}
+header .word-logo h2 {
+  padding: 5px;
+}
+header .word-logo i {
+  display: flex;
+  align-items: center;
+  padding: 5px;
 }
 header a {
   padding: 10px;
   text-decoration: none;
-  font-size: 1.3rem;
+  font-size: 1.4rem;
   color: black;
 }
-.image-section {
-  position: relative;
-  text-align: center;
-  color: whitesmoke;
-}
-.image-section .center-text {
+.center-text {
   position: absolute;
-  top: 12%;
+  top: 20%;
   left: 50%;
   transform: translate(-50%, -50%);
   font-size: 1.6rem;
+}
+.container-welcome {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 20px;
+  border: 1px solid black;
+}
+.container-welcome h2 {
+  font-size: 2.6rem;
+}
+.main-content {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+.contact-us {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
 }
