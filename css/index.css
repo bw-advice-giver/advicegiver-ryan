@@ -333,12 +333,14 @@ a:hover {
   flex-direction: column;
   padding: 20px;
   border: 1px dashed black;
-  margin: 20px;
   background-color: whitesmoke;
   color: black;
 }
+.contact p {
+  padding: 5px 5px;
+}
 .about-section {
-  border: 2px solid blue;
+  background-color: #7990B1;
 }
 .about-text {
   position: absolute;
@@ -353,26 +355,43 @@ a:hover {
   .about-text {
     top: 200px;
     font-size: 2.2rem;
-    border: 2px solid green;
   }
 }
 .about-main {
   display: flex;
   background-color: #7990B1;
 }
+@media (max-width: 500px) {
+  .about-main {
+    display: flex;
+    flex-direction: column;
+  }
+}
 .ben {
   display: flex;
   flex-direction: column;
-  width: 100%;
   padding: 20px;
   align-items: center;
+  width: 100%;
 }
 .ben h3 {
   padding: 15px;
   font-size: 1.6rem;
 }
+@media (max-width: 500px) {
+  .ben h3 {
+    padding: 20px;
+    font-size: 2.6rem;
+  }
+}
 .ben p {
   padding: 15px;
+}
+@media (max-width: 500px) {
+  .ben p {
+    padding: 20px;
+    border: 3px solid pink;
+  }
 }
 .hector {
   width: 100%;
@@ -385,11 +404,23 @@ a:hover {
   padding: 15px;
   font-size: 1.6rem;
 }
+@media (max-width: 500px) {
+  .hector h3 {
+    padding: 20px;
+    font-size: 2.6rem;
+  }
+}
 .hector p {
   padding: 15px;
 }
+@media (max-width: 500px) {
+  .hector p {
+    padding: 20px;
+    border: 3px solid pink;
+  }
+}
 .rayven {
-  width: 78%;
+  width: 100%;
   padding: 20px;
   display: flex;
   flex-direction: column;
@@ -399,14 +430,24 @@ a:hover {
   padding: 15px;
   font-size: 1.6rem;
 }
+@media (max-width: 500px) {
+  .rayven h3 {
+    padding: 20px;
+    font-size: 2.6rem;
+  }
+}
 .rayven p {
   padding: 15px;
 }
+@media (max-width: 500px) {
+  .rayven p {
+    padding: 20px;
+    border: 3px solid pink;
+  }
+}
 .ryan {
   padding: 20px;
-  width: 85%;
-  height: 150px;
-  border-radius: 60%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -415,6 +456,18 @@ a:hover {
   padding: 15px;
   font-size: 1.6rem;
 }
+@media (max-width: 500px) {
+  .ryan h3 {
+    padding: 20px;
+    font-size: 2.6rem;
+  }
+}
 .ryan p {
   padding: 15px;
+}
+@media (max-width: 500px) {
+  .ryan p {
+    padding: 20px;
+    border: 3px solid pink;
+  }
 }
