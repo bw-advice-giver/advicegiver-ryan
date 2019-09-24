@@ -206,6 +206,36 @@ header a {
   left: 50%;
   transform: translate(-50%, -50%);
   font-size: 2.3rem;
+  display: flex;
+  overflow: hidden;
+  /* Ensures the content is not revealed until the animation */
+  border-right: 0.15em solid #293341;
+  /* The typwriter cursor */
+  white-space: nowrap;
+  /* Keeps the content on a single line */
+  margin: 0 auto;
+  /* Gives that scrolling effect as the typing happens */
+  letter-spacing: 0.15em;
+  /* Adjust as needed */
+  animation: typing 5.5s steps(40, end), blink-caret 0.5s step-end infinite;
+  /* The typewriter cursor effect */
+}
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 75%;
+  }
+}
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #293341;
+  }
 }
 .container-welcome {
   display: flex;
@@ -225,6 +255,8 @@ header a {
   padding: 20px;
   width: 100%;
   justify-content: center;
+  background-color: whitesmoke;
+  align-items: center;
 }
 .main-content .main-text {
   padding: 30px;
@@ -243,6 +275,8 @@ header a {
   display: flex;
   padding: 20px;
   width: 100%;
+  align-items: center;
+  background-color: whitesmoke;
 }
 .middle-content .middle-text {
   padding: 30px;
@@ -251,11 +285,12 @@ header a {
 .actions {
   display: flex;
   justify-content: center;
-  padding: 20px;
+  padding: 40px 20px;
+  border: 1px solid pink;
 }
 .actions a {
   padding: 10px 30px;
-  margin: 10px;
+  margin: 20px;
   font-size: 2.6rem;
   border: 2px #3A648C;
   background-color: #3A648C;
@@ -276,12 +311,74 @@ a:hover {
   background-color: whitesmoke;
   color: black;
 }
-#about .about-text {
+.about-text {
   position: absolute;
   top: 30%;
   left: 50%;
   transform: translate(-50%, -50%);
   font-size: 4.3rem;
   background-color: whitesmoke;
+  padding: 15px;
+}
+.about-main {
+  display: flex;
+  background-color: #7990B1;
+}
+.ben {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 20px;
+  align-items: center;
+}
+.ben h3 {
+  padding: 15px;
+  font-size: 1.6rem;
+}
+.ben p {
+  padding: 15px;
+}
+.hector {
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.hector h3 {
+  padding: 15px;
+  font-size: 1.6rem;
+}
+.hector p {
+  padding: 15px;
+}
+.rayven {
+  width: 78%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.rayven h3 {
+  padding: 15px;
+  font-size: 1.6rem;
+}
+.rayven p {
+  padding: 15px;
+}
+.ryan {
+  padding: 20px;
+  width: 85%;
+  height: 150px;
+  border-radius: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.ryan h3 {
+  padding: 15px;
+  font-size: 1.6rem;
+}
+.ryan p {
   padding: 15px;
 }
