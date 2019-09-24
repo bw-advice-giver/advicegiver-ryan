@@ -205,25 +205,66 @@ header a {
   top: 20%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: 1.6rem;
+  font-size: 2.3rem;
 }
 .container-welcome {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   padding: 20px;
-  border: 1px solid black;
 }
 .container-welcome h2 {
   font-size: 2.6rem;
 }
 .main-content {
   display: flex;
-  flex-direction: column;
+  padding: 20px;
+  width: 100%;
+  justify-content: center;
+}
+.main-content .main-text {
+  padding: 30px;
+  background-color: whitesmoke;
+}
+.in-between {
+  display: flex;
+  justify-content: center;
+  padding: 100px;
+  background-color: #7990B1;
+}
+.in-between .questions {
+  color: whitesmoke;
+}
+.middle-content {
+  display: flex;
+  padding: 20px;
+  width: 100%;
+}
+.middle-content .middle-text {
+  padding: 30px;
+  background-color: whitesmoke;
+}
+.actions {
+  display: flex;
+  justify-content: center;
   padding: 20px;
 }
-.contact-us {
+.actions a {
+  padding: 10px 30px;
+  margin: 10px;
+  font-size: 2.6rem;
+  border: 2px #3A648C;
+  background-color: #3A648C;
+  text-decoration: none;
+  color: whitesmoke;
+  border-radius: 4px;
+}
+.contact {
   display: flex;
   flex-direction: column;
   padding: 20px;
+  border: 1px solid black;
+  margin: 20px;
+  background-color: #293341;
+  color: whitesmoke;
 }
