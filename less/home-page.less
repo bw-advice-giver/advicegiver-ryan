@@ -25,16 +25,13 @@ a {
     padding: 20px;
     width: 100%;
     justify-content: center;
-    // border: 4px solid pink;
-    // background-image: url("../images/handswall.jpg");
-    // position: relative;
-    // // opacity: 0.65;
-    // background-attachment: fixed;
-    // background-position: center;
-    // background-repeat: no-repeat;
-    // background-size: cover;
     background-color: whitesmoke;
     align-items: center;
+
+    @media @tablet {
+        display: flex;
+        flex-direction: column;
+    }
     
 
     .main-text {
@@ -65,16 +62,13 @@ a {
     display: flex;
     padding: 20px;
     width: 100%;
-    // background-image: url("../images/peoplelaughing.jpg");
-    // position: relative;
-    // // opacity: 0.65;
-    // background-attachment: fixed;
-    // background-position: center;
-    // background-repeat: no-repeat;
-    // background-size: cover;
-    // border: 4px solid purple;
     align-items: center;
     background-color: whitesmoke;
+
+    @media @tablet {
+        display: flex;
+        flex-direction: column-reverse;
+    }
 
     .middle-text {
         padding: 30px;
@@ -88,7 +82,7 @@ a {
     display: flex;
     justify-content: center;
     padding: 40px 20px;
-    border: 1px solid pink;
+    // border: 1px solid pink;
 
     a {
         padding: 10px 30px;
@@ -116,21 +110,33 @@ a:hover {
     display: flex;
     flex-direction: column;
     padding: 20px;
-    border: 1px solid black;
+    border: 1px dashed black;
     margin: 20px;
     background-color: whitesmoke;
     color: black;
 }
 
+.about-section {
+    border: 2px solid blue;
+}
+
 
 .about-text {
     position: absolute;
-    top: 30%;
+    top: 250px;
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 4.3rem;
     background-color: whitesmoke;
     padding: 15px;
+
+    @media @mobile {
+        top: 200px;
+        font-size: 2.2rem;
+        border: 2px solid green;
+    }
+
+
     
 }
 

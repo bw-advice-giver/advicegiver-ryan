@@ -202,7 +202,7 @@ header a {
 }
 .center-text {
   position: absolute;
-  top: 20%;
+  top: 200px;
   left: 50%;
   transform: translate(-50%, -50%);
   font-size: 2.3rem;
@@ -217,7 +217,7 @@ header a {
   /* Gives that scrolling effect as the typing happens */
   letter-spacing: 0.15em;
   /* Adjust as needed */
-  animation: typing 5.5s steps(40, end), blink-caret 0.5s step-end infinite;
+  animation: typing 3.5s steps(40, end), blink-caret 0.5s step-end infinite;
   /* The typewriter cursor effect */
 }
 @keyframes typing {
@@ -235,6 +235,21 @@ header a {
   }
   50% {
     border-color: #293341;
+  }
+}
+@media (max-width: 500px) {
+  .center-text {
+    font-size: 1.2rem;
+    top: 125px;
+  }
+}
+@media (max-width: 500px) {
+  .top-section {
+    top: 20%;
+    transform: -50%;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
   }
 }
 .container-welcome {
@@ -258,6 +273,12 @@ header a {
   background-color: whitesmoke;
   align-items: center;
 }
+@media (max-width: 800px) {
+  .main-content {
+    display: flex;
+    flex-direction: column;
+  }
+}
 .main-content .main-text {
   padding: 30px;
   background-color: whitesmoke;
@@ -278,6 +299,12 @@ header a {
   align-items: center;
   background-color: whitesmoke;
 }
+@media (max-width: 800px) {
+  .middle-content {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
 .middle-content .middle-text {
   padding: 30px;
   background-color: whitesmoke;
@@ -286,7 +313,6 @@ header a {
   display: flex;
   justify-content: center;
   padding: 40px 20px;
-  border: 1px solid pink;
 }
 .actions a {
   padding: 10px 30px;
@@ -306,19 +332,29 @@ a:hover {
   display: flex;
   flex-direction: column;
   padding: 20px;
-  border: 1px solid black;
+  border: 1px dashed black;
   margin: 20px;
   background-color: whitesmoke;
   color: black;
 }
+.about-section {
+  border: 2px solid blue;
+}
 .about-text {
   position: absolute;
-  top: 30%;
+  top: 250px;
   left: 50%;
   transform: translate(-50%, -50%);
   font-size: 4.3rem;
   background-color: whitesmoke;
   padding: 15px;
+}
+@media (max-width: 500px) {
+  .about-text {
+    top: 200px;
+    font-size: 2.2rem;
+    border: 2px solid green;
+  }
 }
 .about-main {
   display: flex;
