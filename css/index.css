@@ -234,13 +234,19 @@ header a {
     border-color: transparent;
   }
   50% {
-    border-color: #293341;
+    border-color: #516b8f;
   }
 }
 @media (max-width: 500px) {
   .center-text {
     font-size: 1.2rem;
     top: 125px;
+  }
+}
+@media (max-width: 800px) {
+  .center-text {
+    font-size: 1.6rem;
+    top: 130px;
   }
 }
 @media (max-width: 500px) {
@@ -390,7 +396,6 @@ a:hover {
 @media (max-width: 500px) {
   .ben p {
     padding: 20px;
-    border: 3px solid pink;
   }
 }
 .hector {
@@ -416,7 +421,6 @@ a:hover {
 @media (max-width: 500px) {
   .hector p {
     padding: 20px;
-    border: 3px solid pink;
   }
 }
 .rayven {
@@ -442,7 +446,6 @@ a:hover {
 @media (max-width: 500px) {
   .rayven p {
     padding: 20px;
-    border: 3px solid pink;
   }
 }
 .ryan {
@@ -468,6 +471,5 @@ a:hover {
 @media (max-width: 500px) {
   .ryan p {
     padding: 20px;
-    border: 3px solid pink;
   }
 }
