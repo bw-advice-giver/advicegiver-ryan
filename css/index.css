@@ -237,12 +237,6 @@ header a {
     border-color: #516b8f;
   }
 }
-@media (max-width: 500px) {
-  .center-text {
-    font-size: 1.2rem;
-    top: 125px;
-  }
-}
 @media (max-width: 800px) {
   .center-text {
     font-size: 1.6rem;
@@ -250,12 +244,9 @@ header a {
   }
 }
 @media (max-width: 500px) {
-  .top-section {
-    top: 20%;
-    transform: -50%;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 100%;
+  .center-text {
+    top: 125px;
+    font-size: 1.2rem;
   }
 }
 .container-welcome {
@@ -360,7 +351,7 @@ a:hover {
 @media (max-width: 500px) {
   .about-text {
     top: 200px;
-    font-size: 2.2rem;
+    font-size: 2.6rem;
   }
 }
 .about-main {
