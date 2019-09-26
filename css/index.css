@@ -200,6 +200,14 @@ header a {
   font-size: 1.4rem;
   color: black;
 }
+.actions {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2.3rem;
+  padding: 10px 10px;
+  width: 100%;
+}
 .center-text {
   position: absolute;
   top: 200px;
@@ -253,10 +261,21 @@ header a {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  padding: 20px;
+  padding: 25px;
+  max-height: 100%;
 }
 .container-welcome h2 {
   font-size: 2.6rem;
+}
+@media (max-width: 800px) {
+  .container-welcome h2 {
+    padding: 20px;
+  }
+}
+@media (max-width: 500px) {
+  .container-welcome h2 {
+    padding: 25px;
+  }
 }
 .container-welcome a {
   text-decoration: none;
@@ -316,14 +335,14 @@ header a {
   margin: 20px;
   font-size: 2.6rem;
   border: 2px #3A648C;
-  background-color: #3A648C;
+  background-color: #BAB6CA;
   text-decoration: none;
-  color: whitesmoke;
+  color: black;
   border-radius: 4px;
 }
 a:hover {
-  background-color: #BAB6CA;
-  color: black;
+  background-color: #3A648C;
+  color: white;
 }
 .contact {
   display: flex;
@@ -444,7 +463,6 @@ a:hover {
   width: 100%;
   display: flex;
   flex-direction: column;
-  align-items: center;
 }
 .ryan h3 {
   padding: 15px;
