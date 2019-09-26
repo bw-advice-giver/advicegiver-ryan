@@ -47,12 +47,9 @@ header {
 
 .actions {
     position: absolute;
-    // top: px;
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 2.3rem;
-    // display: flex;
-    // border: 1px solid green;
     padding: 10px 10px;
     width: 100%;
 }
@@ -66,11 +63,11 @@ header {
     font-size: 2.3rem;
     display: flex;
 
-    overflow: hidden; /* Ensures the content is not revealed until the animation */
-    border-right: .15em solid #293341; /* The typwriter cursor */
-    white-space: nowrap; /* Keeps the content on a single line */
-    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-    letter-spacing: .15em; /* Adjust as needed */
+    overflow: hidden; 
+    border-right: .15em solid #293341;
+    white-space: nowrap; 
+    margin: 0 auto; 
+    letter-spacing: .15em;
     animation: typing 3.5s steps(40, end), blink-caret .5s step-end infinite;
 
     @keyframes typing {
@@ -78,7 +75,7 @@ header {
         to { width: 75% }
       }
       
-      /* The typewriter cursor effect */
+      
       @keyframes blink-caret {
         from, to { border-color: transparent }
         50% { border-color: #516b8f; }
@@ -93,25 +90,6 @@ header {
       @media @mobile {
         top: 125px;
         font-size: 1.2rem;
-      }
-
-    
+      } 
 
 }
-
-// .top-section {
-
-
-
-//     // @media @mobile {
-//     //     top: 20%;
-//     //     transform: -50%;
-//     //     margin-left: auto;
-//     //     margin-right: auto;
-//     //     // max-width: 100%;
-//     //   }
-
-     
-
-// }
-

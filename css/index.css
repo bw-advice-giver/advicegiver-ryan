@@ -216,17 +216,11 @@ header a {
   font-size: 2.3rem;
   display: flex;
   overflow: hidden;
-  /* Ensures the content is not revealed until the animation */
   border-right: 0.15em solid #293341;
-  /* The typwriter cursor */
   white-space: nowrap;
-  /* Keeps the content on a single line */
   margin: 0 auto;
-  /* Gives that scrolling effect as the typing happens */
   letter-spacing: 0.15em;
-  /* Adjust as needed */
   animation: typing 3.5s steps(40, end), blink-caret 0.5s step-end infinite;
-  /* The typewriter cursor effect */
 }
 @keyframes typing {
   from {
@@ -340,20 +334,14 @@ header a {
   color: black;
   border-radius: 4px;
 }
+@media (max-width: 500px) {
+  .actions a {
+    font-size: 1.6rem;
+  }
+}
 a:hover {
   background-color: #3A648C;
   color: white;
-}
-.contact {
-  display: flex;
-  flex-direction: column;
-  padding: 20px;
-  border: 1px dashed black;
-  background-color: whitesmoke;
-  color: black;
-}
-.contact p {
-  padding: 5px 5px;
 }
 .about-section {
   background-color: #7990B1;
@@ -524,4 +512,15 @@ form {
 .form-style-1 input {
   padding: 10px;
   margin: 10px;
+}
+.contact {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  border: 1px dashed black;
+  background-color: whitesmoke;
+  color: black;
+}
+.contact p {
+  padding: 5px 5px;
 }
