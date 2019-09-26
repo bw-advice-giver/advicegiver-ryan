@@ -7,7 +7,7 @@ This app creates room for an online global community just for you to connect wit
 
 ## MVP
 
-Onboarding process and user profile set up for two user types: advisors and those seeking advice.  Might include photo, age, gender, life motto (optional), interests, areas of expertise, certifications (if any), social media links, geographic location, language skills etc)
+- Onboarding process and user profile set up for two user types: advisors and those seeking advice.  Might include photo, age, gender, life motto (optional), interests, areas of expertise, certifications (if any), social media links, geographic location, language skills etc)
 - Ability to easily edit/update/delete profile info
 If account setting is on “get advice”:
 - Ability to easily create and post a question (including title,
