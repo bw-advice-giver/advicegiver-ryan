@@ -17,6 +17,8 @@ development, desired time commitment from and advisor etc.) , and optional stret
 - “Mentor tab” for users to see which advisors have offered to help them
 If user type is on “give advice”:
 - An advisory feed tab will display questions and requests set on public mode throughout the day. Select a question if interested in advising a person needing advice. If they select a question, their user name and email will be added to that users “mentor tab”
-STRETCH
+
+## STRETCH GOALS
+
 Ability for a user to sign up to both give and receive advice. Toggle a view for the logged in user to see different account abilities. (Similar to Airbnb and toggling to host view).
 Ability to upload files or photos with a question.
