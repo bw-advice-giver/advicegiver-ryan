@@ -12,16 +12,34 @@ header {
     filter: drop-shadow(5px 5px 15px);
     z-index: 1;
     backdrop-filter: blur(5px);
+
+    @media @mobile {
+      max-width: 100%;
+      padding: 15px 8px;
+    }
     
 
 
     .word-logo {
         display: flex;
        justify-content: space-between;
+      
+       @media @mobile {
+        max-width: 100%;
+        font-size: 1.2rem;
+      }
+      
        
 
        h2 {
            padding: 5px;
+
+           @media @mobile {
+            max-width: 100%;
+            font-size: 1.2rem;
+          }
+
+          
        }
 
        i {
@@ -37,6 +55,10 @@ header {
         text-decoration: none;
         font-size: 1.4rem;
         color: black;
+
+        @media @mobile {
+          font-size: 1rem;
+        }
     }
 
 
@@ -88,8 +110,9 @@ header {
     }
 
       @media @mobile {
-        top: 125px;
-        font-size: 1.2rem;
+        top: 100px;
+        font-size: 1rem;
+        
       } 
 
 }

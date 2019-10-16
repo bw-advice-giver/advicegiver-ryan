@@ -182,12 +182,30 @@ header {
   z-index: 1;
   backdrop-filter: blur(5px);
 }
+@media (max-width: 500px) {
+  header {
+    max-width: 100%;
+    padding: 15px 8px;
+  }
+}
 header .word-logo {
   display: flex;
   justify-content: space-between;
 }
+@media (max-width: 500px) {
+  header .word-logo {
+    max-width: 100%;
+    font-size: 1.2rem;
+  }
+}
 header .word-logo h2 {
   padding: 5px;
+}
+@media (max-width: 500px) {
+  header .word-logo h2 {
+    max-width: 100%;
+    font-size: 1.2rem;
+  }
 }
 header .word-logo i {
   display: flex;
@@ -199,6 +217,11 @@ header a {
   text-decoration: none;
   font-size: 1.4rem;
   color: black;
+}
+@media (max-width: 500px) {
+  header a {
+    font-size: 1rem;
+  }
 }
 .actions {
   position: absolute;
@@ -247,8 +270,8 @@ header a {
 }
 @media (max-width: 500px) {
   .center-text {
-    top: 125px;
-    font-size: 1.2rem;
+    top: 100px;
+    font-size: 1rem;
   }
 }
 .container-welcome {
@@ -257,6 +280,7 @@ header a {
   justify-content: space-evenly;
   padding: 25px;
   max-height: 100%;
+  max-width: 100%;
 }
 .container-welcome h2 {
   font-size: 2.6rem;
@@ -472,6 +496,11 @@ a:hover {
 }
 .contact-top {
   background-color: #3A648C;
+}
+@media (max-width: 500px) {
+  .contact-top {
+    font-size: 1.3rem;
+  }
 }
 form {
   display: flex;
